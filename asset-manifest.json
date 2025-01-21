@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/appposts/static/css/main.8358f47d.css",
+    "main.js": "/appposts/static/js/main.9fe8146c.js",
+    "static/media/Cena1.gif": "/appposts/static/media/Cena1.eea13140c5a7f93e7457.gif",
+    "static/media/Cena2.gif": "/appposts/static/media/Cena2.8d0ae44f3332d879a722.gif",
+    "static/media/Cena3.gif": "/appposts/static/media/Cena3.e5de74280356a4326af0.gif",
+    "index.html": "/appposts/index.html",
+    "main.8358f47d.css.map": "/appposts/static/css/main.8358f47d.css.map",
+    "main.9fe8146c.js.map": "/appposts/static/js/main.9fe8146c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8358f47d.css",
+    "static/js/main.9fe8146c.js"
+  ]
+}
