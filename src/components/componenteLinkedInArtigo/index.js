@@ -1,4 +1,3 @@
-// linkedInArtigo.js
 import React, { useState } from "react";
 import * as S from "./styles";
 import { dataArtigosLink } from "./../../data/dataArtigosLink";
@@ -8,7 +7,7 @@ function LinkedInArtigo() {
   const [currentDayIndex, setCurrentDayIndex] = useState(0); // Dia selecionado
   const [currentArticleIndex, setCurrentArticleIndex] = useState(0); // Artigo selecionado
 
-  // Dados da semana, dia e artigos atuais
+  // Dados da semana, dia e artigo atuais
   const currentWeek = dataArtigosLink[currentWeekIndex];
   const currentDay = currentWeek?.days[currentDayIndex] || { artigos: [] };
   const currentArticle = currentDay?.artigos[currentArticleIndex] || {};
@@ -43,6 +42,7 @@ function LinkedInArtigo() {
       <S.Header>
         <h1>Artigos LinkedIn</h1>
         <S.Selectors>
+          {/* Seletor de Semana */}
           <div>
             <label htmlFor="week-select">Semana:</label>
             <select
@@ -57,6 +57,7 @@ function LinkedInArtigo() {
               ))}
             </select>
           </div>
+          {/* Seletor de Dia */}
           <div>
             <label htmlFor="day-select">Dia:</label>
             <select
@@ -75,36 +76,79 @@ function LinkedInArtigo() {
         </S.Selectors>
       </S.Header>
 
+      {/* Conteúdo do Artigo */}
       <S.Content>
         <S.ArticleCard>
           <h2>{currentArticle.title || "Nenhum artigo disponível"}</h2>
-          <p>{currentArticle.content || ""}</p>
-          {currentArticle.imgSrc && (
-            <img
-              src={currentArticle.imgSrc}
-              alt={currentArticle.imgAlt || "Imagem do artigo"}
-            />
+          {currentArticle.introduction && (
+            <S.Introduction>
+              <p>{currentArticle.introduction}</p>
+            </S.Introduction>
           )}
-          {currentArticle.hashtags && (
+          {/* Renderizar seções dinamicamente */}
+          {currentArticle.sections &&
+            currentArticle.sections.map((section, index) => {
+              if (section.type === "subtitle") {
+                return <S.Subtitle key={index}>{section.content}</S.Subtitle>;
+              }
+              if (section.type === "paragraph") {
+                return <S.Paragraph key={index}>{section.content}</S.Paragraph>;
+              }
+              if (section.type === "list") {
+                return (
+                  <S.List key={index}>
+                    {section.content.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </S.List>
+                );
+              }
+              if (section.type === "quote") {
+                return <S.Quote key={index}>{section.content}</S.Quote>;
+              }
+              if (section.type === "image") {
+                return (
+                  <S.Image
+                    key={index}
+                    src={section.src}
+                    alt={section.alt || "Imagem do artigo"}
+                  />
+                );
+              }
+              if (section.type === "cta") {
+                return (
+                  <S.CTA key={index}>
+                    <p>{section.content}</p>
+                    <a
+                      href={section.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Saiba mais
+                    </a>
+                  </S.CTA>
+                );
+              }
+              return null;
+            })}
+          {/* Conclusão do Artigo */}
+          {currentArticle.conclusion && (
+            <S.Conclusion>
+              <p>{currentArticle.conclusion}</p>
+            </S.Conclusion>
+          )}
+          {/* Tags do Artigo */}
+          {currentArticle.tags && (
             <S.Hashtags>
-              {currentArticle.hashtags.map((tag, index) => (
+              {currentArticle.tags.map((tag, index) => (
                 <span key={index}>{tag}</span>
               ))}
             </S.Hashtags>
           )}
-          {currentArticle.linkUrl && (
-            <S.Button
-              as="a"
-              href={currentArticle.linkUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {currentArticle.linkText || "Leia mais"}
-            </S.Button>
-          )}
         </S.ArticleCard>
       </S.Content>
 
+      {/* Navegação */}
       <S.Navigation>
         <button
           onClick={handlePreviousArticle}

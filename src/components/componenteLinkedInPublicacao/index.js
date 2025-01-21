@@ -78,29 +78,31 @@ function LinkedInPublicacao() {
       <S.Content>
         <S.PostCard>
           <h2>{currentPost.title || "Nenhuma publicação disponível"}</h2>
-          <p>{currentPost.content || ""}</p>
+
+          <S.Description>
+            <p>{currentPost.content || ""}</p>
+
+            {currentPost.linkUrl && (
+              <p>
+                <strong>{currentPost.linkText || "Link"}:</strong>{" "}
+                <a
+                  href={currentPost.linkUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {currentPost.linkUrl}
+                </a>
+              </p>
+            )}
+          </S.Description>
+
           {currentPost.imgSrc && (
-            <img
-              src={currentPost.imgSrc}
-              alt={currentPost.imgAlt || "Imagem da publicação"}
-            />
-          )}
-          {currentPost.hashtags && (
-            <S.Hashtags>
-              {currentPost.hashtags.map((tag, index) => (
-                <span key={index}>{tag}</span>
-              ))}
-            </S.Hashtags>
-          )}
-          {currentPost.linkUrl && (
-            <S.Button
-              as="a"
-              href={currentPost.linkUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {currentPost.linkText || "Saiba mais"}
-            </S.Button>
+            <S.ImageWrapper>
+              <img
+                src={currentPost.imgSrc}
+                alt={currentPost.imgAlt || "Imagem da publicação"}
+              />
+            </S.ImageWrapper>
           )}
         </S.PostCard>
       </S.Content>

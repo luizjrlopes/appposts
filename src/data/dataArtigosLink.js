@@ -1,4 +1,3 @@
-// dataArtigosLink.js
 export const dataArtigosLink = [
   {
     week: 1, // Semana 1
@@ -8,25 +7,45 @@ export const dataArtigosLink = [
         artigos: [
           {
             id: 1,
-            title: "📚 Transforme sua Carreira com Conhecimento",
-            content:
-              "Neste artigo, exploramos como a aprendizagem contínua pode impulsionar sua carreira. Descubra estratégias práticas para aprender algo novo todos os dias.",
-            imgSrc: "path/to/image1.jpg",
-            imgAlt: "Imagem de um profissional estudando",
-            hashtags: ["#Carreira", "#Aprendizagem", "#Sucesso"],
-            linkText: "Leia o artigo completo",
-            linkUrl: "https://www.linkedin.com",
-          },
-          {
-            id: 2,
-            title: "💼 Networking: A Chave para Novas Oportunidades",
-            content:
-              "Saiba como construir conexões valiosas e como elas podem abrir portas para o seu crescimento profissional.",
-            imgSrc: "path/to/image2.jpg",
-            imgAlt: "Imagem de pessoas apertando as mãos",
-            hashtags: ["#Networking", "#Oportunidades", "#LinkedIn"],
-            linkText: "Saiba mais",
-            linkUrl: "https://www.linkedin.com",
+            title: "Como Alavancar sua Carreira em Tecnologia 🚀",
+            introduction: `O mercado de tecnologia está em constante evolução, e profissionais precisam se adaptar para se destacar. Neste artigo, vamos explorar as melhores práticas para crescer na sua carreira.`,
+            sections: [
+              {
+                type: "subtitle",
+                content: "1. Entenda as Tendências do Mercado",
+              },
+              {
+                type: "paragraph",
+                content:
+                  "Acompanhe blogs, participe de eventos e mantenha-se atualizado sobre as tecnologias mais demandadas. Ferramentas como Inteligência Artificial, Cloud Computing e Data Analytics estão em alta.",
+              },
+              {
+                type: "list",
+                content: [
+                  "Participe de cursos e certificações.",
+                  "Leia artigos de especialistas.",
+                  "Conecte-se com profissionais da área no LinkedIn.",
+                ],
+              },
+              {
+                type: "quote",
+                content:
+                  "A melhor maneira de prever o futuro é criá-lo. – Peter Drucker",
+              },
+              {
+                type: "image",
+                src: "https://via.placeholder.com/800x400",
+                alt: "Imagem ilustrativa sobre carreira em tecnologia",
+              },
+              {
+                type: "cta",
+                content:
+                  "Inscreva-se na nossa Reunião Estratégica gratuito e conquiste suas metas!",
+                link: "https://beacons.ai/cloudexpertschool",
+              },
+            ],
+            conclusion: `A jornada para o sucesso em tecnologia exige dedicação e aprendizado contínuo. Aproveite os recursos disponíveis e comece agora.`,
+            tags: ["#Tecnologia", "#Carreira", "#CrescimentoProfissional"],
           },
         ],
       },
@@ -34,15 +53,46 @@ export const dataArtigosLink = [
         day: 2, // Dia 2
         artigos: [
           {
-            id: 3,
-            title: "🌟 Dicas para se Destacar no LinkedIn",
-            content:
-              "Otimize seu perfil, participe de discussões e publique artigos para aumentar sua visibilidade na plataforma.",
-            imgSrc: "path/to/image3.jpg",
-            imgAlt: "Imagem de uma pessoa usando LinkedIn",
-            hashtags: ["#LinkedIn", "#Dicas", "#PerfilProfissional"],
-            linkText: "Confira as dicas",
-            linkUrl: "https://www.linkedin.com",
+            id: 2,
+            title: "Como Alavancar sua Carreira em Tecnologia 🚀",
+            introduction: `O mercado de tecnologia está em constante evolução, e profissionais precisam se adaptar para se destacar. Neste artigo, vamos explorar as melhores práticas para crescer na sua carreira.`,
+            sections: [
+              {
+                type: "subtitle",
+                content: "1. Entenda as Tendências do Mercado",
+              },
+              {
+                type: "paragraph",
+                content:
+                  "Acompanhe blogs, participe de eventos e mantenha-se atualizado sobre as tecnologias mais demandadas. Ferramentas como Inteligência Artificial, Cloud Computing e Data Analytics estão em alta.",
+              },
+              {
+                type: "list",
+                content: [
+                  "Participe de cursos e certificações.",
+                  "Leia artigos de especialistas.",
+                  "Conecte-se com profissionais da área no LinkedIn.",
+                ],
+              },
+              {
+                type: "quote",
+                content:
+                  "A melhor maneira de prever o futuro é criá-lo. – Peter Drucker",
+              },
+              {
+                type: "image",
+                src: "https://via.placeholder.com/800x400",
+                alt: "Imagem ilustrativa sobre carreira em tecnologia",
+              },
+              {
+                type: "cta",
+                content:
+                  "Inscreva-se na nossa Reunião Estratégica gratuito e conquiste suas metas!",
+                link: "https://beacons.ai/cloudexpertschool",
+              },
+            ],
+            conclusion: `A jornada para o sucesso em tecnologia exige dedicação e aprendizado contínuo. Aproveite os recursos disponíveis e comece agora.`,
+            tags: ["#Tecnologia", "#Carreira", "#CrescimentoProfissional"],
           },
         ],
       },
@@ -55,15 +105,93 @@ export const dataArtigosLink = [
         day: 1, // Dia 1
         artigos: [
           {
+            id: 3,
+            title: "Como Alavancar sua Carreira em Tecnologia 🚀",
+            introduction: `O mercado de tecnologia está em constante evolução, e profissionais precisam se adaptar para se destacar. Neste artigo, vamos explorar as melhores práticas para crescer na sua carreira.`,
+            sections: [
+              {
+                type: "subtitle",
+                content: "1. Entenda as Tendências do Mercado",
+              },
+              {
+                type: "paragraph",
+                content:
+                  "Acompanhe blogs, participe de eventos e mantenha-se atualizado sobre as tecnologias mais demandadas. Ferramentas como Inteligência Artificial, Cloud Computing e Data Analytics estão em alta.",
+              },
+              {
+                type: "list",
+                content: [
+                  "Participe de cursos e certificações.",
+                  "Leia artigos de especialistas.",
+                  "Conecte-se com profissionais da área no LinkedIn.",
+                ],
+              },
+              {
+                type: "quote",
+                content:
+                  "A melhor maneira de prever o futuro é criá-lo. – Peter Drucker",
+              },
+              {
+                type: "image",
+                src: "https://via.placeholder.com/800x400",
+                alt: "Imagem ilustrativa sobre carreira em tecnologia",
+              },
+              {
+                type: "cta",
+                content:
+                  "Inscreva-se na nossa Reunião Estratégica gratuito e conquiste suas metas!",
+                link: "https://beacons.ai/cloudexpertschool",
+              },
+            ],
+            conclusion: `A jornada para o sucesso em tecnologia exige dedicação e aprendizado contínuo. Aproveite os recursos disponíveis e comece agora.`,
+            tags: ["#Tecnologia", "#Carreira", "#CrescimentoProfissional"],
+          },
+        ],
+      },
+      {
+        day: 2, // Dia 2
+        artigos: [
+          {
             id: 4,
-            title: "📊 Insights para Alavancar seus Resultados",
-            content:
-              "Descubra como interpretar dados pode ajudar você a tomar decisões mais inteligentes e estratégicas.",
-            imgSrc: "path/to/image4.jpg",
-            imgAlt: "Imagem de gráficos e dados",
-            hashtags: ["#Insights", "#Dados", "#Decisões"],
-            linkText: "Veja o artigo",
-            linkUrl: "https://www.linkedin.com",
+            title: "Como Alavancar sua Carreira em Tecnologia 🚀",
+            introduction: `O mercado de tecnologia está em constante evolução, e profissionais precisam se adaptar para se destacar. Neste artigo, vamos explorar as melhores práticas para crescer na sua carreira.`,
+            sections: [
+              {
+                type: "subtitle",
+                content: "1. Entenda as Tendências do Mercado",
+              },
+              {
+                type: "paragraph",
+                content:
+                  "Acompanhe blogs, participe de eventos e mantenha-se atualizado sobre as tecnologias mais demandadas. Ferramentas como Inteligência Artificial, Cloud Computing e Data Analytics estão em alta.",
+              },
+              {
+                type: "list",
+                content: [
+                  "Participe de cursos e certificações.",
+                  "Leia artigos de especialistas.",
+                  "Conecte-se com profissionais da área no LinkedIn.",
+                ],
+              },
+              {
+                type: "quote",
+                content:
+                  "A melhor maneira de prever o futuro é criá-lo. – Peter Drucker",
+              },
+              {
+                type: "image",
+                src: "https://via.placeholder.com/800x400",
+                alt: "Imagem ilustrativa sobre carreira em tecnologia",
+              },
+              {
+                type: "cta",
+                content:
+                  "Inscreva-se na nossa Reunião Estratégica gratuito e conquiste suas metas!",
+                link: "https://beacons.ai/cloudexpertschool",
+              },
+            ],
+            conclusion: `A jornada para o sucesso em tecnologia exige dedicação e aprendizado contínuo. Aproveite os recursos disponíveis e comece agora.`,
+            tags: ["#Tecnologia", "#Carreira", "#CrescimentoProfissional"],
           },
         ],
       },

@@ -82,16 +82,52 @@ export const Hashtags = styled.div`
   }
 `;
 
+export const Description = styled.div`
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #555;
+
+    strong {
+      color: #333;
+      font-weight: bold;
+    }
+
+    a {
+      color: #0073b1; /* Cor do link no estilo LinkedIn */
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  text-align: center;
+  margin-bottom: 20px;
+
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+`;
+
+export const ActionWrapper = styled.div`
+  text-align: center;
+  margin-top: 10px;
+`;
+
 export const Button = styled.a`
   display: inline-block;
+  padding: 10px 20px;
   background-color: #0073b1;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
   text-decoration: none;
-  font-size: 0.9rem;
-  text-align: center;
-  transition: background-color 0.3s;
+  border-radius: 5px;
+  font-size: 1rem;
 
   &:hover {
     background-color: #005582;

@@ -51,20 +51,110 @@ export const ArticleCard = styled.div`
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
   h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
+    color: #333;
   }
 
   p {
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 15px;
+    color: #555;
   }
 
   img {
     max-width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
+  }
+`;
+
+export const Introduction = styled.div`
+  margin-bottom: 20px;
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #444;
+  }
+`;
+
+export const Subtitle = styled.h3`
+  font-size: 1.25rem;
+  margin: 20px 0 10px;
+  color: #0073b1;
+`;
+
+export const Paragraph = styled.p`
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #333;
+`;
+
+export const List = styled.ul`
+  list-style: disc;
+  margin: 20px;
+  padding-left: 40px;
+
+  li {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #555;
+  }
+`;
+
+export const Quote = styled.blockquote`
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #0073b1;
+  padding-left: 15px;
+  margin: 20px 0;
+`;
+
+export const Image = styled.img`
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+`;
+
+export const CTA = styled.div`
+  text-align: center;
+  margin: 30px 0;
+
+  p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073b1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+
+    &:hover {
+      background-color: #005582;
+    }
+  }
+`;
+
+export const Conclusion = styled.div`
+  margin: 30px 0;
+
+  p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #444;
   }
 `;
 

@@ -16,7 +16,7 @@ export const dataPublicacaoLink = [
             imgSrc: "path/to/image.jpg", // Caminho da imagem ou vídeo
             imgAlt: "Imagem impactante que complementa a publicação", // Texto alternativo para acessibilidade
             hashtags: ["#Inspiração", "#Resultados", "#Liderança"], // Hashtags relevantes
-            linkText: "Saiba mais",
+            linkText: "🔗Garanta sua vaga agora",
             linkUrl: "https://beacons.ai/cloudexpertschool", // Link para ação
             author: "Cloud Expert School", // Nome do autor ou empresa
           },
